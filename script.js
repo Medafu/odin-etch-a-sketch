@@ -15,8 +15,6 @@ button.addEventListener('click', () => {
 
     container.replaceChildren()
     drawGrid(number)
-    container.style.gridTemplateRows = `repeat(${number}, 1fr)`
-    container.style.gridTemplateColumns = `repeat(${number}, 1fr)`
 })
 
 function drawGrid(number) {
@@ -30,6 +28,8 @@ function drawGrid(number) {
             container.appendChild(grid_item)
         }
     }
+    container.style.gridTemplateRows = `repeat(${number}, 1fr)`
+    container.style.gridTemplateColumns = `repeat(${number}, 1fr)`
 }
 
 drawGrid(16)
