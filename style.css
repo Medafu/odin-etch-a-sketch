@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    max-width: 150px;
+}
+
+.container {
+    display: grid;
+    width: 600px;
+    height: 600px;
+}
+
+.grid-item {
+    border: 1px solid black;
+}
